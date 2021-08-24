@@ -9,9 +9,14 @@ html {
   
 body {
     min-height: 100vh;
+    background-color: #8a4530;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     /*background-color: #8a4530;*/
     background-image: linear-gradient(#d77355, #8a4530)
@@ -70,6 +75,7 @@ nav {
 
 .content-container {
     text-align: center;
+    width: 100%;
     background-color: #8a4530;
     opacity: .8;
 }
@@ -120,3 +126,9 @@ footer {
 
 main { grid-area: 4 / 1 / span 6 / span 12;}
 footer { grid-area: 10 / 1 / span 3 / span 12;}
+
+@media only screen and (max-width: 879px) {
+    .ingredients{
+        width: 60%;
+    }
+}
