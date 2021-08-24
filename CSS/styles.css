@@ -89,7 +89,7 @@ header {
 
 #background {
     display: flex;
-    background-image: url("/Users/dad/Documents/GitHub/Projects/mock-club-page/images/Beer-background-oil.jpg");
+    background-image: url("../images/Beer-background-oil.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -100,7 +100,7 @@ header {
 
 #background p {
     display: flex;
-    background-image: url("/Users/dad/Documents/GitHub/Projects/mock-club-page/images/Beer-background.jpeg");
+    background-image: url("../images/Beer-background.jpeg");
     background-position: center;
     background-size: 125%;
     height: 40%;
