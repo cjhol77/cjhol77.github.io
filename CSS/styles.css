@@ -1,0 +1,122 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+body {
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    /*background-color: #8a4530;*/
+    background-image: linear-gradient(#d77355, #8a4530)
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: calc(1.2em + 2.5vw);
+    text-align: center;
+}
+
+a, p {
+    font-size: calc(1em + 1.5vw);
+}
+
+nav {
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 50px) repeat(6, 1fr), repeat(3, 50px);
+}
+
+.ingredients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.img-container {
+    width: 20%;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0 1.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.img-container p {
+    background-color: #e6c86e;
+    margin: 0;
+    padding: 0;
+}
+
+.content-container {
+    text-align: center;
+    background-color: #8a4530;
+    opacity: .8;
+}
+
+.content-container h1 {
+    color: #d77355
+}
+
+header { 
+    grid-area: 1 / 1 / span 3 / span 12;
+    background-image: linear-gradient(#f99070, #d77355);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#background {
+    display: flex;
+    background-image: url("/Users/dad/Documents/GitHub/Projects/mock-club-page/images/Beer-background-oil.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#background p {
+    display: flex;
+    background-image: url("/Users/dad/Documents/GitHub/Projects/mock-club-page/images/Beer-background.jpeg");
+    background-position: center;
+    background-size: 125%;
+    height: 40%;
+    width: 100%;
+    border: black 1px solid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 0px 10%;
+}
+
+footer {
+    background-image: linear-gradient(#a55a44, #8a4530);
+    text-align: center;
+}
+
+main { grid-area: 4 / 1 / span 6 / span 12;}
+footer { grid-area: 10 / 1 / span 3 / span 12;}
